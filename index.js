@@ -12,11 +12,11 @@ console.log({pie})
 //&,|,<<,>>,
 
 //Data types
- letx=10;
+ let x=10;
 names= "kendo"
 boolean=2<6 ? true:false
 // null = "novalue"
-let x;  //undefined
+let y;  //undefined
 // bigInt= large intergers
 
 // symbols
