@@ -135,3 +135,78 @@ function multiple(a,b){
 }
 console.log(multiple(3,4));
 
+
+//objects
+
+const car ={
+    make:"toyota",model:"camry",year:2019,color:"Silver",start:function(){
+        comsole.log("Engine started");},
+        stop:function(){
+            console.log("Engine stooppped");
+            
+        }
+    };
+    
+console.log(car);
+
+
+
+// attempts
+let attempts = 0;
+const maxattempts=3;
+let condition=true;
+
+while (attempts && condition < maxattempts){
+    console.log(`try again ${attempts+1}`);
+
+    if (attempts ===1){
+        condition=false;
+    }
+
+    attempts++;
+}
+if (attempts >= maxattempts && condition){
+    console.log(`Account locked`);
+    
+}
+
+const logInAttepts =(maxattempts=>{
+    let attempts=1;
+    
+    while(attempts <=maxattempts){// increment befor if starts with index 0
+       
+        console.log(`loginattempts ${attempts}`);
+        attempts++;
+       
+    }
+})
+
+logInAttepts(3)
+
+//objects
+let user={
+    name:"Esther",
+    greet: function () {
+        return "Hello"+ ""+ this.name
+    }
+};
+console.log( user.greet());
+
+let make ={name:"Esther"};
+let b = a;
+b.name ="jane";
+console.log(a.name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
