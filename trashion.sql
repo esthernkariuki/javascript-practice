@@ -1,4 +1,4 @@
---create schema trashion
+create schema trashion
 
 create table driver_details(
 drivers_id VARCHAR primary KEY,
