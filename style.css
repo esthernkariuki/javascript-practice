@@ -1,0 +1,144 @@
+/* #title{
+    text-align: center;
+}
+
+#fruList{
+    list-style: none;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+
+
+}
+
+#vegList{
+    list-style: none;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+
+}
+
+#mangoImage{
+    width: 15em;
+    border-radius: 1em;
+}
+
+ #bananaImage{
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+}
+
+ #melonImage{
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+}
+
+
+ #onionImage{
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+}
+
+#tomatoImage{
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+}
+
+#kalesImage{
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+}
+
+.price{
+    display: flex;
+    gap: 3em;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width:500px) and (min-width:0px){
+
+  
+
+#fruList{
+   
+    flex-direction: column;
+
+
+
+}
+
+#vegList{
+           flex-direction: column;
+
+
+}
+
+
+
+
+}
+
+
+@media only screen and (max-width:600px) and (min-width:501px){
+
+  
+
+#fruList{
+   
+    flex-direction: column;
+
+
+
+}
+
+#vegList{
+           flex-direction: column;
+
+
+}
+
+
+
+
+} */
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 3px 4px 6px 3px white;
+}
+
+#fruList, #vegList{
+    display: flex;
+    justify-content: space-evenly;
+    gap:50px;
+}
+
+@media only screen and (max-width:600px){
+    #fruList, #vegList{
+        flex-direction: column;
+    }
+   
+}
+
+@media only screen and (min-width:601px) and (max-width:1000px){
+    #fruList, #vegList{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

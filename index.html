@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ <!--<!DOCTYPE HTML>
 
 <html>
 
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <h1 id="title">Welcome to Greens Kiosk</h1>
+    <h1 id="title1">Welcome to Greens Kiosk</h1>
     <p>We sell fruits and vegetables</p>
     <h3>Fruits</h3>
     <ul id="fruList">
@@ -44,8 +44,6 @@
         for (let i = 0; i < fruitsh3.length; i++) {
             fruitsh3[i].style.textTransform="uppercase";
         }
-
-       
         const fruitList = document.getElementById('fruList');
         const newFruit = document.createElement('li');
         newFruit.textContent = "Kiwi";
@@ -56,8 +54,226 @@
         newVeg.textContent = "Broccoli";
         vegList.appendChild(newVeg);
     </script>
+
+<h2>Javascript addEventListenner()</h2>
+<p>Thia example uses the adddEventListenner() method to attach  a click event to a button</p>
+<button id="myBtn">Try me</button>
+
+<script>
+    document.getElementById('myBtn').addEventListener('click',function(){
+        // alert("Hello world")
+        function myFunction(){
+            alert("Hello World!")
+        }
+    })
+</script>
+
+
+<h1 id="title">Hello World</h1>
+<button onclick="changeTitle()">Transform title</button>
+<div id='mydiv' class="oldClass">some divs</div>
+
+
+<button onclick="createPara()">Creare a paragraph</button>
+<button onclick="removePara()">remove a paragraph</button>
+<div id="MYDIV">
+    Check it out please and confirm where neccesary if you dont mind
+</div>
+<script>
+    function changeTitle(){
+        let titleElement=document.getElementById('title');
+        titleElement.innerHtml='Hello Javesript'
+        titleElement.style.color='blue'
+        titleElement.style.backgroundColor='yellow'
+
+    }
+    let otherDiv =document.querySelector('mydiv')
+    otherDiv.classList.add('newClass')
+
+    otherDiv.classList.remove('oldClass')
+
+    function createPara(){
+        let para = document.createElement('P')
+        let t =document.createTextNode("This is a paragraph")
+        para.appendChild(t) //using appendchild to insert the created text node into the paragraphs
+        document.getElementById("MYDIV").appendChild('para')//appending the paragraph  to theexisting div
+
+        function removePara(){
+            let parent=document.getElementById("MYDIV")
+            let child=parent.getElementsByTagName("P")[0];
+            parent.replaceChild(child); //removing the paragraph from the div
+        }
+    }
+</script>
+
+
+
+
+
 </body>
+</html> -->
+<!-- 
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p id="subtitle">We sell fruits and vegetables</p>
+  <h3 >Fruits</h3>
+  <ul id="fruList">
+    <li> 
+        <div  class="categoryContainer"> 
+             <p>Mangoes</p>
+            <img src="https://i.pinimg.com/736x/10/4f/a2/104fa25d9c4ec1f4f67dcfbe38ad046c.jpg" id="mangoImage">
+            
+             <div class="price">
+                 <p>Price</p>
+                 <p>+</p>
+            </div>
+            <div class="price">
+                 <p>Quantity</p>
+                 <p>kgs</p>
+            </div>
+            
+        </div>
+    </li>
+    <li> 
+        <div class="categoryContainer">
+          <p>Bananas</p>
+              <img src="https://i.pinimg.com/736x/6f/47/87/6f47875a4df414530f9ad871e90c57e1.jpg" id="bananaImage">
+                  <div class="price">
+                 <p>Price</p>
+                 <p>+</p>
+            </div>
+            <div class="price">
+                 <p>Quantity</p>
+                 <p>kgs</p>
+            </div>
+        </div>
+      
+    </li>
+    <li>
+        <div class="categoryContainer">
+          <p>Water Melons</p>
+        
+        <img src="https://i.pinimg.com/736x/99/fa/a5/99faa59cebc7f2c6150ad997fb3bf0af.jpg" id="melonImage">
+            <div class="price">
+                 <p>Price</p>
+                 <p>+</p>
+            </div>
+            <div class="price">
+                 <p>Quantity</p>
+                 <p>kgs</p>
+            </div>
+            </div>
+    </li>
+  </ul>
+  <h3 >Vegetables</h3>
+  <ul id="vegList">
+    <li>
+                <div class="categoryContainer">
+
+        <p>Onions</p>
+        <img src="https://i.pinimg.com/736x/a0/51/64/a051640c5843a399694147cc8b15b181.jpg" id="onionImage">
+         <div class="price">
+                 <p>Price</p>
+                 <p>+</p>
+            </div>
+            <div class="price">
+                 <p>Quantity</p>
+                 <p>kgs</p>
+            </div>
+                </div>
+
+    </li>
+    <li>
+         <div class="categoryContainer">
+        <p>Tomatoes</p>
+        <img src="https://i.pinimg.com/736x/0d/6c/b7/0d6cb77ae0c4b2d49e883a66d9cc6e33.jpg" id="tomatoImage">
+         <div class="price">
+                 <p>Price</p>
+                 <p>+</p>
+            </div>
+            <div class="price">
+                 <p>Quantity</p>
+                 <p>kgs</p>
+            </div>
+          </div>
+    </li>
+
+    <li> 
+                <div class="categoryContainer">
+
+        <p>Kales</p>
+        <img src="https://i.pinimg.com/736x/9d/c4/54/9dc454d97f6edee3f206e2f3eb4df806.jpg" id="kalesImage">
+         <div class="price">
+                 <p>Price</p>
+                 <p>+</p>
+            </div>
+            <div class="price">
+                 <p>Quantity</p>
+                 <p>kgs</p>
+            </div>
+                </div>
+    </li>
+  </ul>
+
+
+
+  <script src="index.js"></script>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greens Kiosk</title>
+    <link rel="icon" href="Images/kiosk.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/4ea4f48bde.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="title">Welcome to Greens Kiosk</h1>
+    <p id="text">We sell fruits and vegetables <i class="fa-solid fa-cart-shopping"></i></p>
+    <h3>Fruits</h3>
+    <ul id="fruList" class="list">
+        <li>
+            Mangoes
+            <img id="mangoes" src="https://i.pinimg.com/736x/9d/d4/cc/9dd4ccd44328ea8b74b597e235bae046.jpg" alt="Mangos">
+        </li>
+        <li>
+            Bananas
+            <img id="bananas" src="https://trilogyflavors.com/wp-content/uploads/2024/10/AdobeStock_308965604-800x800.jpeg" alt="Bananas">
+        </li>
+        <li>
+            Watermelons
+            <img id="watermelons" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQlJnr1Oi8QArKjMXdoJRI8RXPTYOBAvj0donSDtkYtwyRJyz-" alt="Watermelon">
+        </li>
+    </ul>
+    <h3>Vegetables</h3>
+    <ul id="vegList" class="list">
+        <li>
+            Onions
+            <img id="onions" src="https://i.pinimg.com/736x/26/63/96/266396671091cf9e6ae643e441bb7196.jpg" alt="Onions">
+        </li>
+        <li>
+            Tomatoes
+            <img id="tomatoes" src="https://i.pinimg.com/736x/3c/2c/39/3c2c393f3d81b3f6c7e10d82d9e5529c.jpg" alt="Tomatoes">
+        </li>
+        <li>
+            Kales
+            <img id="kales" src="https://i.pinimg.com/736x/36/ff/bc/36ffbc25fe8168e37e7e7bd237516856.jpg" alt="Kales">
+        </li>
+    </ul>
+    <script src="index.js"></script>
+</body>
 </html>
-
-
