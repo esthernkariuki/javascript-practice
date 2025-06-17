@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us & Sign Up | RenewIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    .section-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 48px 0 24px 0;
+    }
+    .contact-signup-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 32px;
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+      padding: 48px 0;
+    }
+    .contact-box, .signup-box {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 10px rgba(50, 50, 50, 0.08);
+      padding: 32px 28px;
+      min-width: 260px;
+      max-width: 360px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .contact-box {
+      margin-right: 0;
+    }
+    .contact-box h2,
+    .signup-box h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .contact-info {
+      line-height: 2;
+      font-size: 1rem;
+    }
+    .contact-info span {
+      font-weight: 600;
+      display: inline-block;
+      width: 90px;
+    }
+    .signup-box {
+      background: #f7faf7;
+      border: 1.5px solid #b1efc0;
+    }
+    .signup-box p {
+      text-align: center;
+      margin-bottom: 18px;
+      color: #333;
+    }
+    .signup-btn-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    .signup-btn {
+      flex: 1 1 100px;
+      padding: 14px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s, box-shadow 0.15s;
+      box-shadow: 0 2px 8px rgba(80, 180, 100, 0.11);
+    }
+    .signup-btn.trader {
+      background: #16c60c;
+      color: #fff;
+    }
+    .signup-btn.trader:hover, .signup-btn.trader:focus {
+      background: #12a50a;
+    }
+    .signup-btn.upcycler {
+      background: #fff;
+      color: #16c60c;
+      border: 2px solid #16c60c;
+    }
+    .signup-btn.upcycler:hover, .signup-btn.upcycler:focus {
+      background: #16c60c;
+      color: #fff;
+    }
+    @media (max-width: 900px) {
+      .contact-signup-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        padding: 24px 0;
+      }
+      .contact-box, .signup-box {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 1.2rem;
+        margin: 28px 0 16px 0;
+      }
+      .contact-signup-row {
+        padding: 12px 0;
+      }
+      .contact-box, .signup-box {
+        padding: 16px 8px;
+      }
+      .contact-box h2,
+      .signup-box h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="section-title">Contact Us</div>
+  <div class="contact-signup-row">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div><span>Address:</span> Nairobi, Kenya</div>
+        <div><span>Email:</span> renewit@gmail.com</div>
+        <div><span>Contact:</span> +254 11 647 890</div>
+      </div>
+    </div>
+    <div class="signup-box">
+      <h2>Sign Up</h2>
+      <p>Choose how you want to join:</p>
+      <div class="signup-btn-group">
+        <button class="signup-btn trader">Sign Up as Trader</button>
+        <button class="signup-btn upcycler">Sign Up as Upcycler</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

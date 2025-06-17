@@ -1,0 +1,142 @@
+.contact-section {
+  padding: 40px 0 60px 0;
+  text-align: center;
+  background: #fff;
+}
+.contact-signup-section{
+    display: flex;
+    width: 100%;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: #111;
+}
+.contact-signup-bg {
+  background: url('https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+.contact-card {
+  background: #686767;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 28px 32px;
+  min-width: 260px;
+  max-width: 340px;
+  text-align: left;
+  height: 50vh;
+  line-height: 4;
+  font-size: 1.5em;
+}
+.contact-card p {
+  margin: 18px 0;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.contact-card p strong {
+  font-weight: 500;
+}
+/* Sign Up Section Styles */
+ .signup-card {
+  background: #881818;
+  padding: 48px 0;
+  justify-content: center;
+}
+.signup-container {
+  background: #422222;
+  padding: 36px 32px 30px 32px;
+  border-radius: 20px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
+}
+.signup-card h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+  color: #222;
+}
+ .signup-desc {
+  color: #555;
+  margin-bottom: 20px;
+}
+.signup-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.signup-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  /* transition: background 0.2s, color 0.2s; */
+}
+.trader-btn {
+  background: #00c853;
+  color: #fff;
+}
+.upcycler-btn {
+  background: #2962ff;
+  color: #fff;
+}
+.signup-btn.main-btn {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  margin-top: 16px;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+.signup-form input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.signup-form input:focus {
+  border-color: #00c853;
+  outline: none;
+}
+@media (max-width: 700px) {
+  .contact-bg {
+    padding: 30px 0;
+  }
+  .contact-card {
+    padding: 16px 6vw;
+    min-width: unset;
+    width: 95vw;
+    max-width: 380px;
+  }
+  .signup-section {
+    padding: 24px 0;
+  }
+  .signup-container {
+    padding: 20px 2vw;
+    max-width: 96vw;
+  }
+  .signup-section h2 {
+    font-size: 1.25rem;
+  }
+  .signup-btn {
+    font-size: 0.98rem;
+    padding: 11px 10px;
+  }
+}
